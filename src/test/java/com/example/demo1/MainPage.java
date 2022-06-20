@@ -6,14 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
-    @FindBy(css = "a.wt-button_mode_primary")
-    public WebElement seeAllToolsButton;
+    @FindBy(xpath = "//a/img[@alt=\"Plexus logo\"]")
+    public WebElement plexusLogo;
 
-    @FindBy(css = "nav > [data-test-marker=\"Developer Tools\"]")
-    public WebElement toolsMenu;
-
-    @FindBy(css = "[data-test='site-header-search-action']")
-    public WebElement searchButton;
+    @FindBy(xpath = "//div/a[@href=\"/experience-plexus/your-opportunities\"]")
+    public WebElement buttonYourOportunities;
 
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);

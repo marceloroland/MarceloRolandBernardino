@@ -1,2 +1,2 @@
-# MarceloRolandBernardino
-MarceloRolandBernardino
+# auto-awesome
+Automation Test Repo
